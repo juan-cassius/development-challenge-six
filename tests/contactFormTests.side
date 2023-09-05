@@ -1,0 +1,259 @@
+{
+  "id": "4dbf69f9-6b92-474e-9c48-bcd069e170f6",
+  "version": "2.0",
+  "name": "development-challenge-six",
+  "url": "https://qa.medcloud.link",
+  "tests": [{
+    "id": "61b77990-46d4-4679-a737-ace63080d0b7",
+    "name": "contactFormSuccessTest",
+    "commands": [{
+      "id": "4d747d5f-a71c-428d-a8ec-1cde114f4b16",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6d66597-0f34-468d-b24a-b6a39841bce4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3243c2d5-87f5-493b-a727-98b142575aa2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.flex > .flex-col #name",
+      "targets": [
+        ["css=.flex > .flex-col #name", "css:finder"],
+        ["xpath=(//input[@id='name'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "Juan Cassius Carneiro Pereira"
+    }, {
+      "id": "b018d4c4-07a7-474a-8363-6f7515a48b34",
+      "comment": "",
+      "command": "type",
+      "target": "css=.flex > .flex-col #email",
+      "targets": [
+        ["css=.flex > .flex-col #email", "css:finder"],
+        ["xpath=(//input[@id='email'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "cassjuan@hotmail.com"
+    }, {
+      "id": "3bdba09c-510a-403a-8dc6-dd077a4c6c3c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.flex > .flex-col #phone",
+      "targets": [
+        ["css=.flex > .flex-col #phone", "css:finder"],
+        ["xpath=(//input[@id='phone'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "42999492887"
+    }, {
+      "id": "4308613f-2638-4c6b-a0cc-6c1559f3b858",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Olá, estou entrando em contato só para testar o campo de mensagem da seção contato."
+    }, {
+      "id": "70af10dc-da94-4b73-b6c9-a2c1a53b8a2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xxl\\3Ah-12",
+      "targets": [
+        ["css=.xxl\\3Ah-12", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de313f9d-09b7-4980-86b5-651992564880",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.xxl\\3Ah-12",
+      "targets": [],
+      "value": "Enviado"
+    }, {
+      "id": "b8667502-cb83-4788-9ddc-f7d51104aa77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sm\\3Ainline",
+      "targets": [
+        ["css=.sm\\3Ainline", "css:finder"],
+        ["xpath=//section[@id='Contact']/section/form/div[4]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Mensagem enviada com sucesso.')]", "xpath:innerText"]
+      ],
+      "value": "Mensagem enviada com sucesso."
+    }]
+  }, {
+    "id": "169998fd-3651-45ba-b788-b432ec60cee6",
+    "name": "contactFormWithoutDataTest",
+    "commands": [{
+      "id": "1eaee830-ed82-4ac9-9aac-7a76fd2dea46",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0c926da-2d1a-45bc-862d-2fe3492a015e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dc292b8-eb0c-42fd-a398-3c64b2130d63",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xxl\\3Ah-12",
+      "targets": [
+        ["css=.xxl\\3Ah-12", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0a3354e-b1f5-448e-b4ba-820a8b5bea58",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Campo obrigatório faltante.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9b712d5-91e7-43b9-8eb9-8a673ad31e27",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-red-100",
+      "targets": [
+        ["css=.bg-red-100", "css:finder"],
+        ["xpath=//section[@id='Contact']/section/form/div[4]", "xpath:idRelative"],
+        ["xpath=//form/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e23180a-ea80-4ad1-97d3-2b88bd48a3c5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mt-8 > .font-bold",
+      "targets": [],
+      "value": "Um erro inesperado ocorreu."
+    }]
+  }, {
+    "id": "ffcaf16a-0171-48c3-9f49-9212e58c4009",
+    "name": "contactFormWrongDatatypeTest",
+    "commands": [{
+      "id": "72f2ec67-19bd-4136-9260-05c9f91ad369",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "749d223b-dd59-4dd4-a101-e5085b9ad487",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1e68b86-b792-4437-aaea-4c3927412064",
+      "comment": "",
+      "command": "type",
+      "target": "css=.flex > .flex-col #name",
+      "targets": [
+        ["css=.flex > .flex-col #name", "css:finder"],
+        ["xpath=(//input[@id='name'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "86ff72a3-2788-4ed3-af02-e51f7c7fdde8",
+      "comment": "",
+      "command": "type",
+      "target": "css=.flex > .flex-col #email",
+      "targets": [
+        ["css=.flex > .flex-col #email", "css:finder"],
+        ["xpath=(//input[@id='email'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1@1"
+    }, {
+      "id": "aaed2a07-d8ae-4c4d-a1af-53db572f01c4",
+      "comment": "",
+      "command": "type",
+      "target": "css=.flex > .flex-col #phone",
+      "targets": [
+        ["css=.flex > .flex-col #phone", "css:finder"],
+        ["xpath=(//input[@id='phone'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section/form/div/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "abcd-efgh"
+    }, {
+      "id": "5372d0c7-f2af-4418-9bce-77e2b8a4cfce",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Apenas uma mensagem teste"
+    }, {
+      "id": "f0db835e-9f99-4238-a88a-4f288349ed33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xxl\\3Ah-12",
+      "targets": [
+        ["css=.xxl\\3Ah-12", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//section[@id='Contact']/section/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//form/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13297de4-e40e-4da5-b510-cfab637884db",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": "Mensagem enviada com sucesso."
+    }]
+  }],
+  "suites": [{
+    "id": "35645e05-fd76-45a4-b6f5-9370a70fc2fb",
+    "name": "contactFormTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["61b77990-46d4-4679-a737-ace63080d0b7", "169998fd-3651-45ba-b788-b432ec60cee6", "ffcaf16a-0171-48c3-9f49-9212e58c4009"]
+  }],
+  "urls": ["https://qa.medcloud.link/"],
+  "plugins": []
+}
