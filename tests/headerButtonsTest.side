@@ -1,0 +1,266 @@
+{
+  "id": "a6b0a5a9-5e2c-47cf-a2a0-dcc484b4214c",
+  "version": "2.0",
+  "name": "development-challenge-six",
+  "url": "https://qa.medcloud.link",
+  "tests": [{
+    "id": "e7460e54-6534-4b51-ad37-72f28c1b6938",
+    "name": "headerHomeButton",
+    "commands": [{
+      "id": "bd5a2e33-cfb8-49ed-ba5a-875ad69b353a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a82e9b04-c82a-4d33-afe0-40be864928fc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a584000-4ed4-4a98-92c3-c5ae82672d49",
+      "comment": "Isso garante que a página saiu da seção Home",
+      "command": "click",
+      "target": "css=.mx-20\\%",
+      "targets": [
+        ["css=.mx-20\\%", "css:finder"],
+        ["xpath=//section[@id='RIS']/p", "xpath:idRelative"],
+        ["xpath=//section[2]/section/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Gerencie o fluxo de agendamento com automação de envio de preparos e o recebimento de confirmações. Controle listas de espera e encaixes. Aumente a produtividade através do agendamento online e do auto-atendimento.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90cfe381-e874-4829-b201-62db17a135c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=headerHome",
+      "targets": [
+        ["id=headerHome", "id"],
+        ["css=#headerHome", "css:finder"],
+        ["xpath=//button[@id='headerHome']", "xpath:attributes"],
+        ["xpath=//div[@id='sectionHeaderWeb']/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3250b5f0-7216-4d90-ac3e-ef734e1a00f4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sm\\3Atext-mob11xl",
+      "targets": [
+        ["css=.sm\\3Atext-mob11xl", "css:finder"],
+        ["xpath=//section[@id='Home']/section/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "Seus exames\\nna nuvem"
+    }]
+  }, {
+    "id": "6636d5e0-5275-434a-9298-f21d6cf86bfb",
+    "name": "headerRISButton",
+    "commands": [{
+      "id": "3b716ae3-9aef-4731-8645-dd543d44b4df",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36a4435a-3fd4-4409-93d0-a165d7a905eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49a1a1a6-7932-484e-901e-580945ee8e76",
+      "comment": "",
+      "command": "click",
+      "target": "id=headerRis",
+      "targets": [
+        ["id=headerRis", "id"],
+        ["css=#headerRis", "css:finder"],
+        ["xpath=//button[@id='headerRis']", "xpath:attributes"],
+        ["xpath=//div[@id='sectionHeaderWeb']/button[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ed95df9-d899-4f87-9d01-565b0d418ae0",
+      "comment": "Esse texto é o primeiro da seção RIS. Se aparecer, estamos na seção e o botão funcionou",
+      "command": "assertText",
+      "target": "css=#RIS > .sm\\3Atext-mob10xl",
+      "targets": [
+        ["css=#RIS > .sm\\3Atext-mob10xl", "css:finder"],
+        ["xpath=//section[@id='RIS']/h1", "xpath:idRelative"],
+        ["xpath=//section[2]/section/h1", "xpath:position"]
+      ],
+      "value": "Um RIS pensado para\\na sua gestão"
+    }]
+  }, {
+    "id": "9100a2d2-ba7f-415f-9941-9858b2b76210",
+    "name": "headerPACSButton",
+    "commands": [{
+      "id": "58102e57-11ff-44a2-9298-18cc08032fc0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b0c428d-5c68-4107-b29f-44791811fab2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50760790-2f44-4721-ab7f-fdb6d7497d00",
+      "comment": "",
+      "command": "click",
+      "target": "id=headerPacs",
+      "targets": [
+        ["id=headerPacs", "id"],
+        ["css=#headerPacs", "css:finder"],
+        ["xpath=//button[@id='headerPacs']", "xpath:attributes"],
+        ["xpath=//div[@id='sectionHeaderWeb']/button[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f19453d-512f-45b8-a95e-b0eab9d5dd3f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mt-12 > .sm\\3Atext-mob10xl",
+      "targets": [],
+      "value": "Seu editor de laudos.\\nReinventado."
+    }]
+  }, {
+    "id": "2d1d25ec-c702-4cca-ba62-40f63e8e75d2",
+    "name": "headerPortalButton",
+    "commands": [{
+      "id": "977f049c-3232-46f2-a445-a2693fe6f512",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78c5713b-2389-4812-8bbe-afbb158426c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14056aa0-c0cd-4f43-ae2e-cfbeb0b2f7a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=headerPortal",
+      "targets": [
+        ["id=headerPortal", "id"],
+        ["css=#headerPortal", "css:finder"],
+        ["xpath=//button[@id='headerPortal']", "xpath:attributes"],
+        ["xpath=//div[@id='sectionHeaderWeb']/button[4]", "xpath:idRelative"],
+        ["xpath=//div[4]/button[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be0b83a2-3b84-4b6a-865f-c8e41bf4c4b8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#Portal > .justify-center > .sm\\3Atext-mob10xl",
+      "targets": [],
+      "value": "A sacola de exames que\\ncabe no seu bolso"
+    }]
+  }, {
+    "id": "584a3491-b28a-455d-bc86-bf3dc1cb4ddb",
+    "name": "headerContactButton",
+    "commands": [{
+      "id": "ee061654-5f7b-4bf2-a7d5-a62a5084233f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b55e938d-94f7-4f90-ba1a-a1eb63b0f4f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c164651-a99e-4ad0-a0b5-2d5c93cbf434",
+      "comment": "",
+      "command": "click",
+      "target": "id=headerContact",
+      "targets": [
+        ["id=headerContact", "id"],
+        ["css=#headerContact", "css:finder"],
+        ["xpath=//button[@id='headerContact']", "xpath:attributes"],
+        ["xpath=//div[@id='sectionHeaderWeb']/button[6]", "xpath:idRelative"],
+        ["xpath=//div[4]/button[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18c08c9b-1496-48a4-a200-6c06f2d82aa8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.xxl\\3Amy-16 > .sm\\3Atext-mob10xl",
+      "targets": [],
+      "value": "Entre em contato"
+    }]
+  }, {
+    "id": "0a7678bd-edfe-4e8c-82ae-7064b313f67b",
+    "name": "headerTrialButton",
+    "commands": [{
+      "id": "ac4bfc6f-2cb9-43e0-955a-0580d9612707",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a063bce-3fc0-4a41-89c3-992fc836f47d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f79814e-2d77-4638-baef-4cdce7258fcb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-full > .text-white",
+      "targets": [
+        ["css=.h-full > .text-white", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/nav/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Testar grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af53d80a-7496-42d1-a9e9-5459fa946d34",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.z-50:nth-child(4) .text-2xl",
+      "targets": [],
+      "value": "Experimente por 14 dias!"
+    }]
+  }],
+  "suites": [{
+    "id": "21eabfb1-0d38-4a65-bdf5-de181b2f5dce",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e7460e54-6534-4b51-ad37-72f28c1b6938"]
+  }],
+  "urls": ["https://qa.medcloud.link/"],
+  "plugins": []
+}

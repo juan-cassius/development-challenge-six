@@ -1,0 +1,789 @@
+{
+  "id": "736ad0b9-32a5-4969-a09b-da6783e97c4d",
+  "version": "2.0",
+  "name": "development-challenge-six",
+  "url": "https://qa.medcloud.link",
+  "tests": [{
+    "id": "a15c5673-060a-4599-8b68-a6ba3a2eb758",
+    "name": "footerContactAddressesTest",
+    "commands": [{
+      "id": "0a71617b-74aa-4ec0-a3ec-2c548aed458d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b84e9038-a8c4-4f93-ac94-f56ffdd0ced2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "610746c7-afc4-4064-856f-6b424baa9567",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xxl\\3Apy-24",
+      "targets": [
+        ["css=.xxl\\3Apy-24", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section", "xpath:idRelative"],
+        ["xpath=//section[7]/section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24c66e68-4b35-4112-b9d7-e9e7bb14e51b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w-2\\/4 > .text-base",
+      "targets": [],
+      "value": "Contate-nos"
+    }, {
+      "id": "53766cba-666b-4505-9b3d-99752fae3c4a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.xxl\\3Amt-12:nth-child(1) > li:nth-child(1)",
+      "targets": [],
+      "value": "Equipe comercial | +55 (11) 3382-7992"
+    }, {
+      "id": "679765cb-dbc6-4866-893e-091e2fb8151d",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=contato@medcloud.com.br",
+      "targets": [],
+      "value": "contato@medcloud.com.br"
+    }]
+  }, {
+    "id": "db0230be-8c7c-4b76-a08e-33ffc5eeec41",
+    "name": "footerPrivacyPolicyTest",
+    "commands": [{
+      "id": "afa39d90-e5a7-45ac-ac75-3f2d8492a806",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "300cbe60-aa45-4884-b11e-7164c7980b4e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "992x1025",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "131b3a2f-7b88-49a7-8e58-75fb9a92d3dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Política de privacidade",
+      "targets": [
+        ["linkText=Política de privacidade", "linkText"],
+        ["css=li:nth-child(3) > .hover\\3Atext-secondary", "css:finder"],
+        ["xpath=//a[contains(text(),'Política de privacidade')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div[2]/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pdfs/Medcloud-Privacy-Policy.pdf')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Política de privacidade')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5524",
+      "windowTimeout": 2000
+    }, {
+      "id": "449318a9-63aa-4e86-85b2-a163b5e96b97",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7a9a20a-e2c5-4481-adf1-2373f174881f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5524}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ee2e177-fe93-4f7a-a163-903bd97a6879",
+      "comment": "Volta a janela da página inicial e",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8425c905-41b7-4625-aece-cdccffe57ace",
+      "comment": "por garantia, fecha a mesma.",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9224e2d0-82e7-4b42-821b-387e7c9f536e",
+      "comment": "Seleciona a janela nova",
+      "command": "selectWindow",
+      "target": "handle=${win5524}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea3868d5-eb9f-47fc-882a-d5220899489c",
+      "comment": "Armazena o Url da janela na variável \"newWindowUrl\"",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "newWindowUrl"
+    }, {
+      "id": "6e00a2d5-bd4e-49a6-a56c-f3a487c066a2",
+      "comment": "Verifica a variável possui o link esperado",
+      "command": "assert",
+      "target": "newWindowUrl",
+      "targets": [],
+      "value": "https://qa.medcloud.link/pdfs/Medcloud-Privacy-Policy.pdf"
+    }]
+  }, {
+    "id": "1c6946dc-32ad-4829-850e-e2dccc37d98f",
+    "name": "footerUseTermsTest",
+    "commands": [{
+      "id": "1e663526-6d7c-4669-ab34-2abfad930a97",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be1412f0-06bf-48df-aed3-37b6826df27b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "992x1025",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "519d52d3-0736-4aee-b3d7-eb228a99f52a",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) > .hover\\3Atext-secondary",
+      "targets": [
+        ["linkText=Termos de uso", "linkText"],
+        ["css=li:nth-child(4) > .hover\\3Atext-secondary", "css:finder"],
+        ["xpath=//a[contains(text(),'Termos de uso')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div[2]/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pdfs/Medcloud-Terms-Use.pdf')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Termos de uso')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3657",
+      "windowTimeout": 2000
+    }, {
+      "id": "7f0fcb0e-fda4-4370-b658-dbd95b283403",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b16c8b98-20b7-441f-8ef3-9e9b3de14ee0",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3657}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd28775a-fe92-476e-9ea0-1e8cf2836c89",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a602b457-162b-49ce-a114-7d3b41ab2bf0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2baabb93-e7cf-4ad1-92ce-308c6dec3700",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3657}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b0ccd88-bfc1-4321-b56e-db4599d6d8e2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "newWindowUrl"
+    }, {
+      "id": "d1d3e675-b2f9-43ea-91a7-a6046ded2944",
+      "comment": "",
+      "command": "assert",
+      "target": "newWindowUrl",
+      "targets": [],
+      "value": "https://qa.medcloud.link/pdfs/Medcloud-Terms-Use.pdf"
+    }]
+  }, {
+    "id": "c1d9ad07-6937-4923-841e-2a65cc39a9f2",
+    "name": "footerPhysicalAddressesTest",
+    "commands": [{
+      "id": "14c22067-2f2c-42eb-bc14-6ff9ab849570",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bb6087f-81a8-4516-aba3-67e6889dc471",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38a5c10d-e29d-4832-893f-7a68b91caf3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xxl\\3Apy-24",
+      "targets": [
+        ["css=.xxl\\3Apy-24", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section", "xpath:idRelative"],
+        ["xpath=//section[7]/section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fadcd10-cbc1-4f5b-95ff-774a5dae845c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w-2\\/4 > .text-base",
+      "targets": [],
+      "value": "Contate-nos"
+    }, {
+      "id": "4bcc7a46-d225-423b-9d32-fbaac0a425d9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.xxl\\3Amt-12:nth-child(1) > li:nth-child(3)",
+      "targets": [],
+      "value": "Av. Brigadeiro Faria Lima, 2355, Sala 1210, Jardim Paulistano - São Paulo, SP"
+    }, {
+      "id": "7baf2b10-cd06-4d00-9ea4-0672ed9852aa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.xxl\\3Amt-12:nth-child(1) > li:nth-child(4)",
+      "targets": [],
+      "value": "Rua Francisco Ribas, 33, Centro, Centro Comercial Guaraúna, Ponta Grossa, PR"
+    }]
+  }, {
+    "id": "8fcd270d-872f-4529-884d-4b5a496c1712",
+    "name": "footerAppStoreTest",
+    "commands": [{
+      "id": "daedc258-858c-4c20-9d9a-c68164a6cc16",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb7f6111-b4d3-45ee-ad2c-ea08f551a377",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1439x899",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bb5e8f8-de35-4cd2-b237-d88d0ef74a72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sm\\3Aw-full:nth-child(5) li:nth-child(1) > a",
+      "targets": [
+        ["css=.sm\\3Aw-full:nth-child(5) li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div[2]/div[3]/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://apps.apple.com/br/app/medcloud-2-0/id1486223140')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9731",
+      "windowTimeout": 2000
+    }, {
+      "id": "2f5e42e5-ce9e-4d2b-9f24-84716a3971dd",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9731}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4627de82-b765-4973-ad37-21ecc4b24824",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.we-localnav__title__product",
+      "targets": [],
+      "value": "App Store"
+    }]
+  }, {
+    "id": "bd3600a9-cba2-40a5-894b-755bade6ea2f",
+    "name": "footerGooglePlayTest",
+    "commands": [{
+      "id": "904c392d-8dc3-49fe-bc65-dfb26150daa6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7288dbe-b6aa-4e55-9bbb-a6a5eaf47b2b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1439x899",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1068026-5a09-4f08-a90d-05253af9701b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sm\\3Aw-full:nth-child(5) li:nth-child(2) > a",
+      "targets": [
+        ["css=.sm\\3Aw-full:nth-child(5) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div[2]/div[3]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://play.google.com/store/apps/details?id=co.medcloud.android')])[3]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win827",
+      "windowTimeout": 2000
+    }, {
+      "id": "56ac3a02-24ee-4816-bf5f-014ff1d21b34",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win827}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a1f9a7a-8252-4eeb-80c8-7a77f548593c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.f0UV3d > span",
+      "targets": [],
+      "value": "google_logo Play"
+    }]
+  }, {
+    "id": "57e8a717-ddff-496e-a866-130fd30a16c3",
+    "name": "footerSpotifyLinkTest",
+    "commands": [{
+      "id": "1603e761-f9b8-43e0-9142-80670d3560e3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "028cd054-f725-451e-97f8-cf82b6b3f929",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x963",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b83acc86-db1e-4268-9569-3c617f38a2ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.space-x-6 > a:nth-child(1)",
+      "targets": [
+        ["css=.space-x-6 > a:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://open.spotify.com/show/4IK3IeDsKHbflXLQ6oy20W')]", "xpath:href"],
+        ["xpath=//section/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df679f6a-fa93-46d3-beed-76c83ed23264",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "currentAddress"
+    }, {
+      "id": "5bc8d2cb-1a63-45a7-b05a-4f50f4fdd3f9",
+      "comment": "",
+      "command": "assert",
+      "target": "currentAddress",
+      "targets": [],
+      "value": "https://open.spotify.com/show/4IK3IeDsKHbflXLQ6oy20W"
+    }]
+  }, {
+    "id": "62449d04-7cbb-42b6-abf8-7cd265158258",
+    "name": "footerInstagramLinkTest",
+    "commands": [{
+      "id": "f9325917-075f-4ead-b765-809bd9107f7a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6af29ae2-375f-4395-b47b-029c87e851b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x963",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fbe1be2-8a72-437d-84f2-f4fc4354077b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.space-x-6 > a:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d272c9a-d183-4218-8f78-7f1c93a8c491",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "currentAddress"
+    }, {
+      "id": "bf2987a2-9528-45e8-b83d-25db0f5789fc",
+      "comment": "",
+      "command": "assert",
+      "target": "currentAddress",
+      "targets": [],
+      "value": "https://www.instagram.com/medcloudbr/"
+    }]
+  }, {
+    "id": "5ca72b1c-3267-46de-a5af-9dd9bd527f62",
+    "name": "footerFacebookLinkTest",
+    "commands": [{
+      "id": "a3dc75ea-e058-4cf8-820d-fbadf2b689ff",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9011043b-6507-4f4a-9287-4a6f70671dce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x963",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38deb53a-6c7c-4402-ad34-f7f8040d49ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3)",
+      "targets": [
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.facebook.com/medcloudbr')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c46b437e-b8f8-40fb-81a7-e5acdfa9743f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "currentAddress"
+    }, {
+      "id": "683815c2-edc5-4d0b-8f52-7f2a103454ad",
+      "comment": "",
+      "command": "assert",
+      "target": "currentAddress",
+      "targets": [],
+      "value": "https://www.facebook.com/medcloudbr"
+    }]
+  }, {
+    "id": "acfd8547-2dce-41eb-b7fc-648ea6251a5f",
+    "name": "footerTwitterLinkTest",
+    "commands": [{
+      "id": "c1760ca5-e001-4e32-bf81-78f0a7430ffc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45ba905f-08fc-4647-90ca-8b676f4da8a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x963",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98f215ec-aee8-4d62-b2b1-2d01fdb96dfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(4)",
+      "targets": [
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.facebook.com/medcloudbr')])[2]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d086b27-c2aa-4f71-8672-1f92992aa72f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "currentAddress"
+    }, {
+      "id": "9fc7116e-3db3-4f58-b02b-191ad3945c37",
+      "comment": "",
+      "command": "assert",
+      "target": "currentAddress",
+      "targets": [],
+      "value": "https://twitter.com/medcloudbr"
+    }]
+  }, {
+    "id": "5d1a238e-6179-4250-84e9-56a3381908f1",
+    "name": "footerYoutubeLinkTest",
+    "commands": [{
+      "id": "f4a64366-a01c-47f2-a23d-22dc6950c731",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96de2f1c-3191-415b-b39f-470cb10cc1ff",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x963",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ce6065d-8ca2-403e-919c-1063c7ec03fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(5)",
+      "targets": [
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div/div/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.youtube.com/channel/UCQZCk0wyl9vQLDt84d1Sr1w')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e0e5d61-f13a-4645-9496-e2b1d7fbb216",
+      "comment": "Armazena na variável currentAddress o endereço do site atual",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "currentAddress"
+    }, {
+      "id": "cff2f3ca-b7ff-4fc4-9e71-d523847d38cd",
+      "comment": "Compara a variável ao canal do Youtube da Medcloud",
+      "command": "assert",
+      "target": "currentAddress",
+      "targets": [],
+      "value": "https://www.youtube.com/channel/UCQZCk0wyl9vQLDt84d1Sr1w"
+    }]
+  }, {
+    "id": "08695449-7195-4220-bed8-6f00d00ed880",
+    "name": "footerLinkedinLinkTest",
+    "commands": [{
+      "id": "a5794634-4e93-4845-ae1e-37940bf659f6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fc2b6bd-a9e2-44c5-ad21-d7682e81b51e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x963",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70476994-e13d-427b-913c-75328b0e81d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(6)",
+      "targets": [
+        ["css=a:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div/div/a[6]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.linkedin.com/company/medcloud/')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f47e104-3f45-4bfc-b6c4-1b324a5dd756",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "currentAddress"
+    }, {
+      "id": "96f8cdcd-7479-4032-8e13-4f98e2648e12",
+      "comment": "",
+      "command": "assert",
+      "target": "currentAddress",
+      "targets": [],
+      "value": "https://www.linkedin.com/company/medcloud/"
+    }]
+  }, {
+    "id": "81e8793b-6803-4b84-8514-b50de77a080d",
+    "name": "footerPTBRTest",
+    "commands": [{
+      "id": "41d3471f-7e0f-4a78-8223-86dc8781a807",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fef50c63-c760-471b-a7d1-d8dae18f9850",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x963",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89928449-a433-4bd6-ab9d-1ff3fe228046",
+      "comment": "",
+      "command": "click",
+      "target": "css=.float-right:nth-child(1)",
+      "targets": [
+        ["css=.float-right:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[34]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section[7]/section/div[2]/section[3]/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Português - BR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e461ae2e-9fe2-4d3b-a93a-42657c96617b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w-2\\/4 > .text-base",
+      "targets": [],
+      "value": "Contate-nos"
+    }]
+  }, {
+    "id": "0313b6ca-60ca-4d84-b082-40f9e5c4fbc5",
+    "name": "footerENGTest",
+    "commands": [{
+      "id": "b565880a-1326-4c1c-b9cc-2050eca4d1d7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b96f9cb0-9a22-4f7c-b3ae-d5b8e729fcca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x963",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48175679-88bd-49b2-baab-b903e8891701",
+      "comment": "",
+      "command": "click",
+      "target": "css=.float-right:nth-child(3)",
+      "targets": [
+        ["css=.float-right:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[35]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section[7]/section/div[2]/section[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//section[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Inglês')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f98584f6-3b3e-4727-b99f-b56d64d90aa0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,14789)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "854a0586-c1fd-4fe0-a003-98bad04fef1d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w-2\\/4 > .text-base",
+      "targets": [],
+      "value": "Contact us"
+    }]
+  }, {
+    "id": "2e9fbfb4-dc71-4226-823c-88ebe9a78b03",
+    "name": "footerSPATest",
+    "commands": [{
+      "id": "dd82c05c-778d-425f-8e13-9885a9093a25",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d4ca081-99be-4672-ad97-010f3c3a4480",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x963",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6164a64-4521-4106-9df9-c34362e39bc7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sm\\3Amb-8",
+      "targets": [
+        ["css=.sm\\3Amb-8", "css:finder"],
+        ["xpath=(//button[@type='button'])[36]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section[7]/section/div[2]/section[3]/button[3]", "xpath:idRelative"],
+        ["xpath=//section[3]/button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Espanhol')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b13f4c3-f978-4ff8-b685-735a346ca804",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.w-2\\/4 > .text-base",
+      "targets": [],
+      "value": "Contáctenos"
+    }]
+  }],
+  "suites": [{
+    "id": "717bb369-adfb-4bc0-a9b6-8c14df71e45e",
+    "name": "footerMobileStoreTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8fcd270d-872f-4529-884d-4b5a496c1712", "bd3600a9-cba2-40a5-894b-755bade6ea2f"]
+  }, {
+    "id": "f0d0aeee-9752-4bff-8a8a-fe1aed6d3d6e",
+    "name": "footerAddressesTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a15c5673-060a-4599-8b68-a6ba3a2eb758", "c1d9ad07-6937-4923-841e-2a65cc39a9f2"]
+  }, {
+    "id": "02b6a935-9526-4022-ab30-9fee4bf00162",
+    "name": "footerDocumentsTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["db0230be-8c7c-4b76-a08e-33ffc5eeec41", "1c6946dc-32ad-4829-850e-e2dccc37d98f"]
+  }, {
+    "id": "055ce014-b393-480e-bd15-833c11175d2c",
+    "name": "footerSocialMediaTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5d1a238e-6179-4250-84e9-56a3381908f1", "acfd8547-2dce-41eb-b7fc-648ea6251a5f", "57e8a717-ddff-496e-a866-130fd30a16c3", "08695449-7195-4220-bed8-6f00d00ed880", "62449d04-7cbb-42b6-abf8-7cd265158258", "5ca72b1c-3267-46de-a5af-9dd9bd527f62"]
+  }, {
+    "id": "0855c145-3fe8-4fe9-8f72-bf9718a568dd",
+    "name": "footerIdiomTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0313b6ca-60ca-4d84-b082-40f9e5c4fbc5", "2e9fbfb4-dc71-4226-823c-88ebe9a78b03", "81e8793b-6803-4b84-8514-b50de77a080d"]
+  }],
+  "urls": ["https://qa.medcloud.link/"],
+  "plugins": []
+}
