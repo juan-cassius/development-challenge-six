@@ -1,0 +1,363 @@
+{
+  "id": "b557dbc2-46ac-4bc3-83d6-51fb35eff0aa",
+  "version": "2.0",
+  "name": "development-challenge-six",
+  "url": "https://qa.medcloud.link",
+  "tests": [{
+    "id": "69b1fca3-e5f7-4416-9e09-e63be04e56de",
+    "name": "formsAttachPDFTest",
+    "commands": [{
+      "id": "f662becf-f735-4c52-baeb-070fa0a82388",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "443d3650-9124-42c1-9c3a-caa0da407f90",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96dbdafe-e3fc-4dac-a24d-8c52199c3e67",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Carreiras",
+      "targets": [
+        ["linkText=Carreiras", "linkText"],
+        ["css=.xxl\\3Amt-12:nth-child(2) > li:nth-child(2) > .hover\\3Atext-secondary", "css:finder"],
+        ["xpath=//a[contains(text(),'Carreiras')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div[2]/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'careers.html')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Carreiras')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed592f78-e326-47e5-8d93-9839a4cb7f54",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,3360)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "532bd581-e85c-4c40-b371-8342547f16db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-1\\/3:nth-child(5) .xxl\\3Atext-4xl",
+      "targets": [
+        ["css=.w-1\\/3:nth-child(5) .xxl\\3Atext-4xl", "css:finder"],
+        ["xpath=//div[@id='__next']/section[6]/div/div[5]/a/div/h3", "xpath:idRelative"],
+        ["xpath=//div[5]/a/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Desenvolvedor Mobile/JS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0541d55b-1bac-4d3f-9de1-6dcd79fbb715",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-1\\/4",
+      "targets": [
+        ["css=.px-1\\/4", "css:finder"],
+        ["xpath=//div[@id='__next']/section", "xpath:idRelative"],
+        ["xpath=//section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "614899d3-7946-43fc-b50a-e999b01b02f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=nome-input", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Juan Cassius"
+    }, {
+      "id": "1e1de4f6-ed54-4ab0-819c-7ae46526d193",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=sobrenome-input", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Carneiro Pereira"
+    }, {
+      "id": "a9ee4f44-ee03-4b43-a00d-4054797c70ee",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=e-mail-input", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "cassjuan@hotmail.com"
+    }, {
+      "id": "667bc245-0154-4600-aef6-a021425fc2c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=telefone-input", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "42999492887"
+    }, {
+      "id": "7dfcf4d8-025d-4caf-a3ab-2c73bbac6241",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Sou estudante de ADS e Desenvolvimento Full Stack (React/Node) e ficarei feliz em integrar o time de QA!"
+    }, {
+      "id": "e6470864-126b-482b-9d3d-6698df9ebba2",
+      "comment": "OBS: O chrome só permite caminhos absolutos atualmente.",
+      "command": "type",
+      "target": "id=curriculum",
+      "targets": [
+        ["id=curriculum", "id"],
+        ["name=curriculum", "name"],
+        ["css=#curriculum", "css:finder"],
+        ["xpath=//input[@id='curriculum']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "/home/juan-cassius/Documentos/Carreira/job-applications/development-challenge-six/tests/data/curriculo.pdf"
+    }, {
+      "id": "663fd329-49fd-4675-a081-e29e6a1105bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-xs",
+      "targets": [
+        ["css=.text-xs", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4049f40b-fa74-4f28-a39d-407218453f78",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-xs",
+      "targets": [],
+      "value": "Enviado"
+    }, {
+      "id": "8765f13d-d73a-42da-8a30-881b3cc27384",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": "Sua candidatura para a vaga de Desenvolvedor Mobile/JS foi efetuada com sucesso!"
+    }]
+  }, {
+    "id": "9124082c-f0c2-4313-869e-adb68e6fa33e",
+    "name": "formsAttachJPGTest",
+    "commands": [{
+      "id": "104a2a79-2794-4720-8fb7-c6809bca680d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9489dd2e-5d2e-418e-808d-9f7e4c0b3699",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07d67b91-6802-4ca2-a785-c443ca337d28",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Carreiras",
+      "targets": [
+        ["linkText=Carreiras", "linkText"],
+        ["css=.xxl\\3Amt-12:nth-child(2) > li:nth-child(2) > .hover\\3Atext-secondary", "css:finder"],
+        ["xpath=//a[contains(text(),'Carreiras')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div[2]/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'careers.html')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Carreiras')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "282b5c1e-70ab-40e9-9cf4-7acf04136361",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,3360)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35f5ef08-48c9-4a18-8731-5a9556369073",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-1\\/3:nth-child(5) .xxl\\3Atext-4xl",
+      "targets": [
+        ["css=.w-1\\/3:nth-child(5) .xxl\\3Atext-4xl", "css:finder"],
+        ["xpath=//div[@id='__next']/section[6]/div/div[5]/a/div/h3", "xpath:idRelative"],
+        ["xpath=//div[5]/a/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Desenvolvedor Mobile/JS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a313cc78-1a97-43aa-9d2a-1a5a0ad2e3da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-1\\/4",
+      "targets": [
+        ["css=.px-1\\/4", "css:finder"],
+        ["xpath=//div[@id='__next']/section", "xpath:idRelative"],
+        ["xpath=//section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0f861ce-8bfd-44e6-accb-0f6cdd97d056",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=nome-input", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Juan Cassius"
+    }, {
+      "id": "c55e2a62-e2d3-4dfb-b38f-49d8452a4c20",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=sobrenome-input", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Carneiro Pereira"
+    }, {
+      "id": "26163443-ee2c-4d96-94ca-b29a36ba938a",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=e-mail-input", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "cassjuan@hotmail.com"
+    }, {
+      "id": "c71ffb54-8542-4718-8d2d-6949049b1561",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=telefone-input", "name"],
+        ["css=#phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "42999492887"
+    }, {
+      "id": "c73713c0-1b4a-4fcb-a375-532bc04a67dd",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Sou estudante de ADS e Desenvolvimento Full Stack (React/Node) e ficarei feliz em integrar o time de QA!"
+    }, {
+      "id": "e481c13e-e063-40cc-b8cb-3a63dea705e5",
+      "comment": "OBS: O chrome só permite caminhos absolutos atualmente.",
+      "command": "type",
+      "target": "id=curriculum",
+      "targets": [
+        ["id=curriculum", "id"],
+        ["name=curriculum", "name"],
+        ["css=#curriculum", "css:finder"],
+        ["xpath=//input[@id='curriculum']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "/home/juan-cassius/Documentos/Carreira/job-applications/development-challenge-six/tests/data/curriculo.jpg"
+    }, {
+      "id": "c5b782e6-df82-4657-8dd3-01594a6bb32e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-xs",
+      "targets": [
+        ["css=.text-xs", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/section/section[2]/form/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "934b957f-5d53-4d73-9233-a01cb1d82939",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=.text-xs",
+      "targets": [],
+      "value": "Enviado"
+    }, {
+      "id": "f36fc941-9c26-4c15-b5e2-1564389d956c",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": "Sua candidatura para a vaga de Desenvolvedor Mobile/JS foi efetuada com sucesso!"
+    }]
+  }],
+  "suites": [{
+    "id": "19dc04ce-a9fc-4450-8db1-40fb5f26e457",
+    "name": "formsAttachmentTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9124082c-f0c2-4313-869e-adb68e6fa33e", "69b1fca3-e5f7-4416-9e09-e63be04e56de"]
+  }],
+  "urls": ["https://qa.medcloud.link/"],
+  "plugins": []
+}
