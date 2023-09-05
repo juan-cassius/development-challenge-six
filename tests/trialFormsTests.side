@@ -1,0 +1,973 @@
+{
+  "id": "389e7c3d-a038-42d1-bc99-74e66bfaa904",
+  "version": "2.0",
+  "name": "development-challenge-six",
+  "url": "https://qa.medcloud.link",
+  "tests": [{
+    "id": "4bb3132c-d371-486b-a3e6-e85d50597fbe",
+    "name": "headerTrialFormSuccessTest",
+    "commands": [{
+      "id": "8e0e28b0-7cdf-4151-95c6-cccac347b29b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "955e8ca1-b6b3-4e20-b060-daea95d1c8af",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fd060cc-81e9-413a-b6c8-618adae2b3d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-full > .text-white",
+      "targets": [
+        ["css=.h-full > .text-white", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/nav/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Testar grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c4521b3-7088-4501-8228-599788410401",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=nome-input", "name"],
+        ["css=.mt-4 #name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Juan Cassius Carneiro Pereira"
+    }, {
+      "id": "da793fc2-a290-4399-bed1-cf089afb2ea1",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=e-mail-input", "name"],
+        ["css=.mt-4 #email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "cassjuan@hotmail.com"
+    }, {
+      "id": "f6f4dced-a5e3-4d64-9b48-90b12bb7db4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=telefone-input", "name"],
+        ["css=.mt-4 #phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "42999492887"
+    }, {
+      "id": "fd7d9ab4-4e5a-4ffc-bb6a-c1278fd60372",
+      "comment": "",
+      "command": "select",
+      "target": "id=pos",
+      "targets": [],
+      "value": "label=Gestor de T.I"
+    }, {
+      "id": "5ec35b1c-1546-4672-b830-d6d95dce2653",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d265507-edd8-4117-b277-26282e7fc5e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": "Trial solicitado com sucesso!"
+    }]
+  }, {
+    "id": "e92465f8-5ed0-457f-b10e-2fe015df7f96",
+    "name": "headerTrialFormWithoutNameTest",
+    "commands": [{
+      "id": "d4bd0183-1ed0-489c-b473-982861b8a71f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ba4a147-cef1-434a-967b-a7026e99a3f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5297b84-f3c9-452e-bb17-d5b029c60c73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-full > .text-white",
+      "targets": [
+        ["css=.h-full > .text-white", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/nav/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Testar grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bd270e3-7ad2-4fde-869d-5caab6368b62",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=e-mail-input", "name"],
+        ["css=.mt-4 #email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "cassjuan@hotmail.com"
+    }, {
+      "id": "b3803826-89ee-4cd2-a79f-d5085ab231c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=telefone-input", "name"],
+        ["css=.mt-4 #phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "42999492887"
+    }, {
+      "id": "5562350b-8fb9-415a-a3e5-d6c181582648",
+      "comment": "",
+      "command": "select",
+      "target": "id=pos",
+      "targets": [],
+      "value": "label=Gestor de T.I"
+    }, {
+      "id": "081fd761-9f3c-4712-8c71-6901b83ddbe6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b460ef54-f019-4f40-96cb-806cb41834b1",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b540f003-ea9c-4695-af14-c2904e8526f2",
+    "name": "headerTrialFormWithoutEmailTest",
+    "commands": [{
+      "id": "86cc178f-5e54-4ea1-9f63-9c316b38ea87",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75e20adb-bbcb-4ff4-a84f-498768dfea7b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3eeae0b7-3ffb-4750-b72f-17247fc636f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-full > .text-white",
+      "targets": [
+        ["css=.h-full > .text-white", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/nav/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Testar grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e2b587e-086b-4675-8a73-9c6e297237e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=nome-input", "name"],
+        ["css=.mt-4 #name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Juan Cassius Carneiro Pereira"
+    }, {
+      "id": "48d1c067-4a1c-4584-b51e-348e59b0ac26",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=telefone-input", "name"],
+        ["css=.mt-4 #phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "42999492887"
+    }, {
+      "id": "126b2b7b-a250-4bad-96cf-bc029cb3f87c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68e158c4-6dbd-4830-804b-be26e537ef41",
+      "comment": "",
+      "command": "select",
+      "target": "id=pos",
+      "targets": [],
+      "value": "label=Gestor de T.I"
+    }, {
+      "id": "64e5c7c1-4c32-42aa-aa10-a8581041d5dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cbddb41-c1c3-4c6c-8678-75a63d5d2074",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "37ca02a4-1718-4a04-b329-efcb882132e2",
+    "name": "headerTrialFormWithoutPhoneTest",
+    "commands": [{
+      "id": "875d5041-d3e6-41cf-81ea-533b4e1b9076",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83cae14c-af0d-4b3c-a6fa-c9f6895e5de9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82e7192e-6492-42bb-8c9b-1ea9af0bfdfa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-full > .text-white",
+      "targets": [
+        ["css=.h-full > .text-white", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/nav/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Testar grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "553d2915-9ecd-40b3-93b8-e0406ea49e90",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=nome-input", "name"],
+        ["css=.mt-4 #name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Juan Cassius Carneiro Pereira"
+    }, {
+      "id": "a0a6071a-0d61-4ba7-be95-3fbfce739875",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=e-mail-input", "name"],
+        ["css=.mt-4 #email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "cassjuan@hotmail.com"
+    }, {
+      "id": "78fd949b-8f34-45eb-83c5-90c186871abd",
+      "comment": "",
+      "command": "select",
+      "target": "id=pos",
+      "targets": [],
+      "value": "label=Gestor de T.I"
+    }, {
+      "id": "33004dde-cc83-4233-839f-42d3ad794277",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f25b715a-e966-4753-900e-d2f3ad6dd2fc",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2fb78b88-f91b-4af0-b24e-77bb2cfd1870",
+    "name": "headerTrialFormWrongDatatypeTest",
+    "commands": [{
+      "id": "77bdb323-4eae-4956-855a-238e910aba57",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "696c50cf-aff2-4033-b932-8110e62dccfb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79d99a5f-c366-48fe-86d9-a260ab1133f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-full > .text-white",
+      "targets": [
+        ["css=.h-full > .text-white", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/nav/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Testar grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "766471eb-3b73-4e0f-808f-ad6394dfe028",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=nome-input", "name"],
+        ["css=.mt-4 #name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "0b1fef06-9627-486d-b19b-29ff4d13b660",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=e-mail-input", "name"],
+        ["css=.mt-4 #email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1@1"
+    }, {
+      "id": "e8a789cf-fe80-43eb-a50b-600a44b96668",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=telefone-input", "name"],
+        ["css=.mt-4 #phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "\"\""
+    }, {
+      "id": "a29a9afb-69c5-444b-b2b2-e92a89ce5eea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-col:nth-child(4) > .xxl\\3Atext-lg",
+      "targets": [
+        ["css=.flex-col:nth-child(4) > .xxl\\3Atext-lg", "css:finder"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb5129bf-43cc-4f36-9adb-bcb9601aea61",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4264e9c3-6229-43a3-aa98-b8f0c100c7f5",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b8a74240-9b8c-4466-8410-bbec265e530c",
+    "name": "planTrialFormSuccessTest",
+    "commands": [{
+      "id": "ac9514a4-ca7a-47f9-b2ef-42ffa2d4a31f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a8cc31f-d460-4ce0-bcbc-9e992ad5b48f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60b0a625-6edb-43be-9248-eb21f4aa8405",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-1\\/2:nth-child(1) .xxl\\3Atext-base",
+      "targets": [
+        ["css=.w-1\\/2:nth-child(1) .xxl\\3Atext-base", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//section[@id='Plans']/section/div/div/div/div/div/div/div/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14377e46-542e-4c4f-8534-99cab68920cd",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=nome-input", "name"],
+        ["css=.mt-4 #name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Juan Cassius Carneiro Pereira"
+    }, {
+      "id": "3b853715-add4-4f41-b56e-fd0884448a20",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=e-mail-input", "name"],
+        ["css=.mt-4 #email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "cassjuan@hotmail.com"
+    }, {
+      "id": "c69ec119-e4a9-47cb-93f7-fc7385eeabfd",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=telefone-input", "name"],
+        ["css=.mt-4 #phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "42999492887"
+    }, {
+      "id": "e81e471e-3889-4f22-8bba-0fb465ce0408",
+      "comment": "",
+      "command": "select",
+      "target": "id=pos",
+      "targets": [],
+      "value": "label=Gestor de T.I"
+    }, {
+      "id": "3a17e6cb-0ac9-4941-9a6e-7cd3712ae68f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "109deb2d-8ed9-4dc1-9650-8a4ca9f16f02",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": "Trial solicitado com sucesso!"
+    }]
+  }, {
+    "id": "529a0269-22ee-40f0-93cd-607a38738cc0",
+    "name": "planTrialFormWithoutEmailTest",
+    "commands": [{
+      "id": "fb281cfc-c2dd-4e88-b900-6203b056d6a3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d721aee6-200a-4fd6-9ca1-f477785f1c37",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c7d74b3-ba6f-4372-9726-3bd99a8c46c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-1\\/2:nth-child(1) .xxl\\3Atext-base",
+      "targets": [
+        ["css=.h-full > .text-white", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/nav/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Testar grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ddc14bb-c0f4-4654-b635-6162b951b694",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=nome-input", "name"],
+        ["css=.mt-4 #name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Juan Cassius Carneiro Pereira"
+    }, {
+      "id": "bb628724-a342-43a0-8c8f-a67893a8bf54",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=telefone-input", "name"],
+        ["css=.mt-4 #phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "42999492887"
+    }, {
+      "id": "1e5d64c6-76b2-42a0-a5b9-ccd2d9ccddd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f635d22-73b0-43b9-9b4b-923734ca46bd",
+      "comment": "",
+      "command": "select",
+      "target": "id=pos",
+      "targets": [],
+      "value": "label=Gestor de T.I"
+    }, {
+      "id": "46fd64e3-e31a-49a2-972c-13c76b245495",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34996713-8469-4a26-b3fc-bf220c2546a7",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5de4f26c-fa05-431a-8fa5-cdc0259d3227",
+    "name": "planTrialFormWithoutNameTest",
+    "commands": [{
+      "id": "3e75c41d-420f-4440-87dd-59d1fbb07d57",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b82f8f0-8ee9-4f0d-a33b-8eec82bc6a42",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25cb8e25-41e0-4418-a043-bf1cb2f750ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-1\\/2:nth-child(1) .xxl\\3Atext-base",
+      "targets": [
+        ["css=.h-full > .text-white", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/nav/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Testar grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "454fffcd-014f-4534-816d-b2e322c5c481",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=e-mail-input", "name"],
+        ["css=.mt-4 #email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "cassjuan@hotmail.com"
+    }, {
+      "id": "42bfe2cd-b808-488d-a0ec-3a51df64c7db",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=telefone-input", "name"],
+        ["css=.mt-4 #phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "42999492887"
+    }, {
+      "id": "306fd277-3a8f-4ef6-a954-c12a0b3d968b",
+      "comment": "",
+      "command": "select",
+      "target": "id=pos",
+      "targets": [],
+      "value": "label=Gestor de T.I"
+    }, {
+      "id": "30070c2d-59a9-41d8-99ac-275760dc2122",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "154e0a83-aac6-455b-b7c8-ed63f7b701e0",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "09899e88-4410-4015-9b08-cb922b053685",
+    "name": "planTrialFormWithoutPhoneTest",
+    "commands": [{
+      "id": "d612a1f3-d9e0-4fb0-aaf8-dfdb62bb24fc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97823607-e5d0-4e9c-acdf-c72e415c9235",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90f14fb2-9c2c-4040-bf6f-d27f86935503",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-1\\/2:nth-child(1) .xxl\\3Atext-base",
+      "targets": [
+        ["css=.h-full > .text-white", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/nav/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Testar grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d16e38ce-76d7-43dc-bb4f-3f045086f871",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=nome-input", "name"],
+        ["css=.mt-4 #name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Juan Cassius Carneiro Pereira"
+    }, {
+      "id": "26ca448b-628d-450d-b2f1-4bd711d98fac",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=e-mail-input", "name"],
+        ["css=.mt-4 #email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "cassjuan@hotmail.com"
+    }, {
+      "id": "4bf732fb-1893-465e-9893-31f4e84c3fad",
+      "comment": "",
+      "command": "select",
+      "target": "id=pos",
+      "targets": [],
+      "value": "label=Gestor de T.I"
+    }, {
+      "id": "bc47e83b-e8a0-4e8f-8050-220119d2bd39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba2a817a-dfa7-4bd0-8fb9-430cfc567775",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e993de49-638c-4bf7-a8d6-8bd239bd853e",
+    "name": "planTrialFormWrongDatatypeTest",
+    "commands": [{
+      "id": "7630561a-4b75-4280-9c3f-a5fbdbb9eee8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5f56ce1-c613-48fe-91ff-04b064cbadd2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02401c1d-6438-402e-9896-164f2bb369b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-1\\/2:nth-child(1) .xxl\\3Atext-base",
+      "targets": [
+        ["css=.h-full > .text-white", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/nav/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Testar grátis')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "873c91f9-42cb-4ae7-9b39-aa6345289368",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=nome-input", "name"],
+        ["css=.mt-4 #name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "7bb068c0-2a88-455b-85e8-11e210dd7567",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=e-mail-input", "name"],
+        ["css=.mt-4 #email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1@1"
+    }, {
+      "id": "2a5eaa84-7b76-41b2-b4aa-34b4533e4633",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone",
+      "targets": [
+        ["id=phone", "id"],
+        ["name=telefone-input", "name"],
+        ["css=.mt-4 #phone", "css:finder"],
+        ["xpath=//input[@id='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "\"\""
+    }, {
+      "id": "b79006d7-2b5d-403d-8cd9-d00dba73cc57",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-col:nth-child(4) > .xxl\\3Atext-lg",
+      "targets": [
+        ["css=.flex-col:nth-child(4) > .xxl\\3Atext-lg", "css:finder"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edb309bf-752d-497c-97de-491d64c85bb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mt-8 > .xxl\\3Atext-base",
+      "targets": [
+        ["css=.mt-8 > .xxl\\3Atext-base", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[3]/div[2]/div/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Solicitar uma conta grátis para clínica ou hospital')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b70e24e6-0e16-43e9-ba7c-49daefd22fb9",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.sm\\3Ainline",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8183d8fb-60be-4493-8913-c4717150d1a8",
+    "name": "headerTrialFormTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4bb3132c-d371-486b-a3e6-e85d50597fbe", "b540f003-ea9c-4695-af14-c2904e8526f2", "e92465f8-5ed0-457f-b10e-2fe015df7f96", "37ca02a4-1718-4a04-b329-efcb882132e2", "2fb78b88-f91b-4af0-b24e-77bb2cfd1870"]
+  }, {
+    "id": "3f328669-92b1-4c47-a560-33002fea0431",
+    "name": "planTrialFormTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b8a74240-9b8c-4466-8410-bbec265e530c", "529a0269-22ee-40f0-93cd-607a38738cc0", "5de4f26c-fa05-431a-8fa5-cdc0259d3227", "09899e88-4410-4015-9b08-cb922b053685", "e993de49-638c-4bf7-a8d6-8bd239bd853e"]
+  }],
+  "urls": ["https://qa.medcloud.link/"],
+  "plugins": []
+}
