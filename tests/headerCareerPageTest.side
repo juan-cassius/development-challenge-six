@@ -1,0 +1,79 @@
+{
+  "id": "22457255-0f38-482d-bdb0-a071c06f8c8a",
+  "version": "2.0",
+  "name": "development-challenge-six",
+  "url": "https://qa.medcloud.link",
+  "tests": [{
+    "id": "62057ffd-1f2c-4a5e-a122-6ae375b684e8",
+    "name": "headerCareerPageTest",
+    "commands": [{
+      "id": "8db9c390-e39d-4f63-bf89-736d351369ee",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c347221e-bccb-47a8-8b1a-53fd3d060514",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fa07711-45e8-4f1e-9ace-c8aae15f931c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xxl\\3Amt-12:nth-child(2) > li:nth-child(2) > .hover\\3Atext-secondary",
+      "targets": [
+        ["linkText=Carreiras", "linkText"],
+        ["css=.xxl\\3Amt-12:nth-child(2) > li:nth-child(2) > .hover\\3Atext-secondary", "css:finder"],
+        ["xpath=//a[contains(text(),'Carreiras')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/section[7]/section/div/div[2]/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'careers.html')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Carreiras')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "042379b6-5110-48f1-8111-10cf84af3ef8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.px-6",
+      "targets": [
+        ["linkText=Voltar ao site", "linkText"],
+        ["css=.px-6", "css:finder"],
+        ["xpath=//a[contains(text(),'Voltar ao site')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/nav/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/careers')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Voltar ao site')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b05b4377-307b-4d9a-8444-25ac5a7f04f5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "currentAddress"
+    }, {
+      "id": "0f57e053-4398-40ee-9822-d156a37a14a1",
+      "comment": "",
+      "command": "assert",
+      "target": "currentAddress",
+      "targets": [],
+      "value": "https://qa.medcloud.link/"
+    }]
+  }],
+  "suites": [{
+    "id": "0dfc7fbd-2e0f-4326-8ad5-4e4e5bdba649",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["62057ffd-1f2c-4a5e-a122-6ae375b684e8"]
+  }],
+  "urls": ["https://qa.medcloud.link/"],
+  "plugins": []
+}

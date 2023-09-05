@@ -24,7 +24,7 @@
       "id": "97f383ae-9f24-4f04-8c7a-5d1f9f7f1cad",
       "comment": "",
       "command": "click",
-      "target": "linkText=Carreiras",
+      "target": "css=.xxl\\3Amt-12:nth-child(2) > li:nth-child(2) > .hover\\3Atext-secondary",
       "targets": [
         ["linkText=Carreiras", "linkText"],
         ["css=.xxl\\3Amt-12:nth-child(2) > li:nth-child(2) > .hover\\3Atext-secondary", "css:finder"],

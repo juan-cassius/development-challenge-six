@@ -5,7 +5,7 @@
   "url": "https://qa.medcloud.link",
   "tests": [{
     "id": "e7460e54-6534-4b51-ad37-72f28c1b6938",
-    "name": "headerHomeButton",
+    "name": "headerHomeButtonTest",
     "commands": [{
       "id": "bd5a2e33-cfb8-49ed-ba5a-875ad69b353a",
       "comment": "",
@@ -60,7 +60,7 @@
     }]
   }, {
     "id": "6636d5e0-5275-434a-9298-f21d6cf86bfb",
-    "name": "headerRISButton",
+    "name": "headerRISButtonTest",
     "commands": [{
       "id": "3b716ae3-9aef-4731-8645-dd543d44b4df",
       "comment": "",
@@ -102,7 +102,7 @@
     }]
   }, {
     "id": "9100a2d2-ba7f-415f-9941-9858b2b76210",
-    "name": "headerPACSButton",
+    "name": "headerPACSButtonTest",
     "commands": [{
       "id": "58102e57-11ff-44a2-9298-18cc08032fc0",
       "comment": "",
@@ -140,7 +140,7 @@
     }]
   }, {
     "id": "2d1d25ec-c702-4cca-ba62-40f63e8e75d2",
-    "name": "headerPortalButton",
+    "name": "headerPortalButtonTest",
     "commands": [{
       "id": "977f049c-3232-46f2-a445-a2693fe6f512",
       "comment": "",
@@ -178,7 +178,7 @@
     }]
   }, {
     "id": "584a3491-b28a-455d-bc86-bf3dc1cb4ddb",
-    "name": "headerContactButton",
+    "name": "headerContactButtonTest",
     "commands": [{
       "id": "ee061654-5f7b-4bf2-a7d5-a62a5084233f",
       "comment": "",
@@ -216,7 +216,7 @@
     }]
   }, {
     "id": "0a7678bd-edfe-4e8c-82ae-7064b313f67b",
-    "name": "headerTrialButton",
+    "name": "headerTrialButtonTest",
     "commands": [{
       "id": "ac4bfc6f-2cb9-43e0-955a-0580d9612707",
       "comment": "",
@@ -255,11 +255,11 @@
   }],
   "suites": [{
     "id": "21eabfb1-0d38-4a65-bdf5-de181b2f5dce",
-    "name": "Default Suite",
+    "name": "headerButtonsTests",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["e7460e54-6534-4b51-ad37-72f28c1b6938"]
+    "tests": ["e7460e54-6534-4b51-ad37-72f28c1b6938", "584a3491-b28a-455d-bc86-bf3dc1cb4ddb", "9100a2d2-ba7f-415f-9941-9858b2b76210", "2d1d25ec-c702-4cca-ba62-40f63e8e75d2", "6636d5e0-5275-434a-9298-f21d6cf86bfb", "0a7678bd-edfe-4e8c-82ae-7064b313f67b"]
   }],
   "urls": ["https://qa.medcloud.link/"],
   "plugins": []

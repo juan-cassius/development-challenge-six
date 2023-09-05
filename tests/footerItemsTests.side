@@ -49,7 +49,7 @@
       "id": "679765cb-dbc6-4866-893e-091e2fb8151d",
       "comment": "",
       "command": "assertText",
-      "target": "linkText=contato@medcloud.com.br",
+      "target": "css=.xxl\\3Amt-12:nth-child(1) .hover\\3Atext-secondary",
       "targets": [],
       "value": "contato@medcloud.com.br"
     }]
@@ -74,7 +74,7 @@
       "id": "131b3a2f-7b88-49a7-8e58-75fb9a92d3dc",
       "comment": "",
       "command": "click",
-      "target": "linkText=Política de privacidade",
+      "target": "css=li:nth-child(3) > .hover\\3Atext-secondary",
       "targets": [
         ["linkText=Política de privacidade", "linkText"],
         ["css=li:nth-child(3) > .hover\\3Atext-secondary", "css:finder"],
@@ -711,7 +711,7 @@
     }]
   }, {
     "id": "2e9fbfb4-dc71-4226-823c-88ebe9a78b03",
-    "name": "footerSPATest",
+    "name": "footerESTest",
     "commands": [{
       "id": "dd82c05c-778d-425f-8e13-9885a9093a25",
       "comment": "",

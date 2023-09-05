@@ -473,10 +473,10 @@
     }, {
       "id": "4264e9c3-6229-43a3-aa98-b8f0c100c7f5",
       "comment": "",
-      "command": "assertElementNotPresent",
+      "command": "assertNotText",
       "target": "css=.sm\\3Ainline",
       "targets": [],
-      "value": ""
+      "value": "Trial solicitado com sucesso!"
     }]
   }, {
     "id": "b8a74240-9b8c-4466-8410-bbec265e530c",
@@ -947,10 +947,10 @@
     }, {
       "id": "b70e24e6-0e16-43e9-ba7c-49daefd22fb9",
       "comment": "",
-      "command": "assertElementNotPresent",
+      "command": "assertNotText",
       "target": "css=.sm\\3Ainline",
       "targets": [],
-      "value": ""
+      "value": "Trial solicitado com sucesso!"
     }]
   }],
   "suites": [{
